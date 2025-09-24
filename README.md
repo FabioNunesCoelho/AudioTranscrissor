@@ -11,7 +11,7 @@ Esse processo manual pode levar **semanas**.
 
 Os transcrissores disponíveis na internet, além de pagos ou limitados nas versões gratuitas, permitem **transcrever apenas um áudio por vez**, o que inviabiliza o trabalho em larga escala.
 
-➡️ A solução foi desenvolver um **transcrissor gratuito**, em **Python**, que transcreve **vários áudios de uma só vez**, otimizando o processo de investigação.
+➡️ A solução foi desenvolver um **transcritor gratuito**, em **Python**, que transcreve **vários áudios de uma só vez**, otimizando o processo de investigação.
 
 ---
 
