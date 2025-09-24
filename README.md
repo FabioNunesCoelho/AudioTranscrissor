@@ -1,4 +1,4 @@
-# 🎤 AudioTranscrissor v1.7 – Transcrissor de Áudios do WhatsApp
+# 🎤 AudioTranscrissor v1.7 – Transcritor de Áudios do WhatsApp
 
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)]()
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)]()
