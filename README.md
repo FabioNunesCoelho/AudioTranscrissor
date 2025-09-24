@@ -69,3 +69,17 @@ Os transcrissores disponíveis na internet, além de pagos ou limitados nas vers
    python -m venv .venv
    .venv\Scripts\activate
    pip install -r requirements.txt
+
+## 📸 Evidências Visuais
+
+### Página inicial do repositório
+![Home do repositório](docs/img/repo_home.png)
+
+### Histórico de commits
+![Commits](docs/img/commits.png)
+
+### Release publicada
+![Release](docs/img/release.png)
+
+### Execução da ferramenta
+![Execução](docs/img/execution_gui.png)
