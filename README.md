@@ -50,25 +50,57 @@ Os transcrissores disponíveis na internet, além de pagos ou limitados nas vers
 
 > Windows (VS Code recomendado)
 
-1. **Python 3.12.8** (marque “Add python.exe to PATH”):  
-   https://www.python.org/ftp/python/3.12.8/python-3.12.8-amd64.exe
+1. Instalar o Vs Code, disponível na pasta ou baixar em:
+https://code.visualstudio.com/docs/?dv=win64user
 
-2. **FFmpeg**  
-   - Baixe build completa: https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z  
-   - Extraia, renomeie a pasta para `C:\ffmpeg`  
-   - No **CMD (Admin)**:
-     ```
-     setx /m PATH "C:\ffmpeg\bin;%PATH%"
-     ```
-   - Feche e reabra o terminal, teste com `ffmpeg`.
+2. Instalar extensões para PTBR dentro do VS Code em "Extensões";
 
-3. **Clonar & instalar deps**
-   ```bash
-   git clone https://github.com/<SEU_USUARIO>/AudioTranscrissor.git
-   cd AudioTranscrissor
-   python -m venv .venv
-   .venv\Scripts\activate
-   pip install -r requirements.txt
+3. Instalar o Python vs Python 3.12.8 disponível na pasta ou baixar em:
+https://www.python.org/ftp/python/3.12.8/python-3.12.8-amd64.exe
+  OBS. Marcar PATH na instalação;
+
+4. Instalar openai-whisper pelo terminal do Vs Code (Ctrl + '):
+    Digite o comando no terminal: pip install openai-whisper
+
+Obs.: caso não funcione, reinstalar biblioteca "openai-whisper"
+
+5. instalar ffmpeg disponível na pasta ou baixar em: ffmpeg:https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z
+    descompactar e renomear para "ffmpeg" em seguida colar no disco C:\
+
+    executar o cmd como ADM e executar o código: setx /m PATH "C:\ffmpeg\bin;%PATH%"
+        deve aparecer a frase "êxito: o valor especificado foi salvo"
+
+6. feche e abra o VS Code. caso não funcione, reiniciar o sistema operacional
+    Para verificar se o FFmpeg já está sendo reconhecido, digitar no terminal: ffmpeg 
+     a mensagem não pode aparecer como:
+        "ffmpeg não é um comando reconhecido", diferente disso, estará instalado correto;
+
+7. Execute o arquivo AudioTranscrissor_v1.7.py pelo  VS Code;
+
+8. No canto superior (lado onde fecha a tela) clicar no Triangulo "Executar arquivo do Python" e aguarde.
+
+9. Escolha o modelo e aguarde baixar. Obs. Será necessária baixar apenas uma vez. O download do modelo será necessário apenas uma vez. As transcrições posteriores, os modelos já estarão baixado e prontos para uso.
+
+				>>talela modelo<<
+  		 SIZE       Parametro   Uso VRAM    Velocidade   
+  		 tiny:      39 M;       1GB;         32x
+  		 base:      74 M;       1GB;         16x
+       small:     244 M;      2GB;         6x
+   	 medium:    769 M;      5GB;         2x
+   	 large:     1550 M;     10GB;        1x
+
+Recomendo baixar os modelos small e medium, pois oferecem uma boa transcrição. No entanto, se quiser baixar todos e ir testando, fique à vontade.
+Quanto menor o modelo, menores serão os requisitos do computador e mais rápido será o processo. Porém, neste caso, a qualidade da transcrição será baixa.
+Se optar pelo modelo mais elevado, as transcrições serão mais assertivas.
+ 
+10. Após escolher o modelo e concluído o download, selecione a pasta com os arquivos no formato original do WhatsApp (.opus), clique em Abrir e aguarde a transcrição ser finalizada.
+
+Observação: É normal não visualizar nenhum arquivo. Ignore essa ausência e clique em Selecionar pasta. 
+
+11. Após a transcrição, uma tela indicará "Sucesso", informando o local da pasta transcrições (no mesmo diretório de origem dos áudios).
+
+12. Clique em OK para finalizar o programa e confira se os dados das transcrições nos arquivos .txt correspondem aos áudios transcritos. Cada arquivo .txt terá o mesmo nome do seu respectivo áudio.
+   
 
 ## 📸 Evidências Visuais
 
